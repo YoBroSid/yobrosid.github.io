@@ -1,0 +1,239 @@
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dungeons and Dragons</title>
+
+        <style>
+            body{
+                margin: 0px;
+            }
+            html{
+                background-color: rgb(255, 255, 255);
+            }
+
+        #container{
+        position: relative;
+        }
+
+        #tekst{
+        position: absolute;
+        filter: opacity(60%);
+        font-size:100px;
+
+        color: red;
+        margin-top: -250px;
+        width: 100vw;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        img{
+        width: 100%;
+        aspect-ratio: 4.5/1;
+        object-fit: cover;
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            background-color: gray;
+        }
+
+
+        #mainmenu{
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(16, 14, 14);
+                height: 30px;
+                justify-content: space-around;
+                align-items:stretch;
+                text-align: center;
+                width: 100%;
+                margin-top: -18px;
+                padding-top: 4px;
+            } 
+            .maintext{
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                
+            }
+
+
+
+
+            #sidemenunav{
+                font-family: sans-serif;
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+            }
+            .sidemenu{
+            float: left;
+            }
+            nav a {
+                flex: 1;
+                text-decoration: none;
+                padding-bottom: 0rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(255, 255, 255);
+            }
+            .text:hover {
+                text-shadow: -.25px -.25px 0 rgb(0, 0, 0), 
+                    .25px .25px rgb(0, 0, 0);
+            }
+
+                            #text1 {
+                            display: inline-block;
+                            position: relative;
+                            color: rgb(0, 0, 0);
+                            }
+                            #text1:after {
+                            content: '';
+                            position: absolute;
+                            width: 62%;
+                            transform: scaleX(0);
+                            height: 3px;
+                            bottom: 0;
+                            left: 16;
+                            background-color: red;
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }
+                            #text1:hover:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            }
+
+                            #text2 {
+                            display: inline-block;
+                            position: relative;
+                            color: rgb(0, 0, 0);
+                            }
+                            #text2:after {
+                            content: '';
+                            position: absolute;
+                            width: 48%;
+                            transform: scaleX(0);
+                            height: 3px;
+                            bottom: 0;
+                            left: 16;
+                            background-color: red;
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }
+                            #text2:hover:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            }
+
+                            #text3 {
+                            display: inline-block;
+                            position: relative;
+                            color: rgb(0, 0, 0);
+                            }
+                            #text3:after {
+                            content: '';
+                            position: absolute;
+                            width: 43%;
+                            transform: scaleX(0);
+                            height: 3px;
+                            bottom: 0;
+                            left: 16;
+                            background-color: red;
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }
+                            #text3:hover:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            }
+
+                            #text4 {
+                            display: inline-block;
+                            position: relative;
+                            color: rgb(0, 0, 0);
+                            }
+                            #text4:after {
+                            content: '';
+                            position: absolute;
+                            width: 71%;
+                            transform: scaleX(0);
+                            height: 3px;
+                            bottom: 0;
+                            left: 16;
+                            background-color: red;
+                            transform-origin: bottom left;
+                            transition: transform 0.3s ease-out;
+                            }
+                            #text4:hover:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            }
+
+
+    .adventurepics{
+        width: 500px;
+        height: 300px;
+    }
+         </style>
+
+    </head>
+    <body>
+
+
+    <header>
+        <div id="container">
+            <img src="Medival_Village_Panorama.webp">
+            <div id="tekst">Dungeons and Dragons</div>   
+        </div>
+    </header>
+    <br>
+    <section id="mainmenu">
+            <div class="maintext">Option</div>
+            <div class="maintext">Option</div>
+            <div class="maintext">Option</div>
+            <div class="maintext">Option</div>
+    </section>
+    <br>
+    <br>
+
+    <side class="sidemenu">
+        <nav id="sidemenunav">
+            <a href="#" class="text" id="text1" onclick="window.open('Characters.html')">Characters</a>
+            <a href="#" class="text" id="text2">Factions</a>
+            <a href="#" class="text" id="text3">Discord</a>
+            <a href="#" class="text" id="text4">Champaigns</a>
+        </nav>
+    </side>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div>
+            <img class="adventurepics" src="Adventurers_2.jpg">
+        </div>
+    </section>
+
+
+    <!--<main>
+        <section>
+            <p id="main11">What is Dungeons and Dragons?</p>
+            <img id="Adventurers_1" src="Adventurers_1.jpg">
+            <p id="main1">The core of D&D is about storytelling. The group of players essentially tell a collective story, guiding heroes through dangerous quests to search for treasure, battle deadly foes, and even carry out daring rescues. The adventure itself is only limited by the imagination of the players around the table.</p>
+        </section>
+    </main>-->
+
+    
+   
+    <!--<div id="characterchoice">
+    <center><p id="Lodric" onclick="window.open('lodric_dnd_site.html')">
+        Lodric
+    </p></center>-->
+    

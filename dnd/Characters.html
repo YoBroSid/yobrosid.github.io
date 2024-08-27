@@ -1,0 +1,101 @@
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Characters</title>
+        <style>
+            section {
+                height: 120vh;
+                background-color: black;
+                display: flex;
+            }
+
+            .galleryGrid
+            {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .galleryRow
+            {
+                display: flex;
+                transition-duration: 1s;
+                flex: 1;
+            }
+
+            .galleryRow:hover
+            {
+                flex: 1.5;
+                
+            }
+
+            article {
+                background-size: cover;
+                background-position: center;
+                flex: 1;
+                padding: 1rem;
+                display: flex;
+                align-items: flex-end;
+                color: white;
+                font-size: 50%;
+                transition: 1s;
+                border: 1px;
+                border-color: black;
+                border-radius: 10px;
+                margin: 10px;
+            }
+
+            article:hover {
+                flex: 1.5;
+                font-size: 150%;
+            }
+
+            .Lodric { background-image: url(Lodric.jpg)}
+            .Alacor { background-image: url(Alacor.jpg)}
+            .Monke { background-image: url(Monke.png)}
+        </style>
+    </head>
+    <body>
+       <section class="galleryGrid">
+            <section class="galleryRow">
+                <article class="Lodric">
+                    <div>
+                        <h1>Lodric Falconheart</h1>
+                        <h2>The Mighty Sentinel</h2>
+                    </div>
+                </article>
+                <article class="Alacor">
+                    <div>
+                        <h1>Alacor</h1>
+                        <h2>The all Knowing</h2>
+                    </div>
+                </article>
+                <article class="Monke">
+                    <div>
+                        <h1>Monke</h1>
+                        <h2>The Drunk Bastard</h2>
+                    </div>
+                </article>
+            </section>
+            <section class="galleryRow">
+                <article class="Lodric">
+                    <div>
+                        <h1>Lodric Falconheart</h1>
+                        <h2>The Mighty Sentinel</h2>
+                    </div>
+                </article>
+                <article class="Alacor">
+                    <div>
+                        <h1>Alacor</h1>
+                        <h2>The all Knowing</h2>
+                    </div>
+                </article>
+                <article class="Monke">
+                    <div>
+                        <h1>Monke</h1>
+                        <h2>The Drunk Bastard</h2>
+                    </div>
+                </article>
+            </section>
+       </section>
+    </body>
+</html>
